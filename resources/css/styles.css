@@ -1,3 +1,12 @@
+/* @font-face{ 
+	font-family: 'Mygothammedium';
+	src: url('gothammedium.eot');
+	src: url('gothammedium.eot?#iefix') format('embedded-opentype'),
+	     url('gothammedium.woff') format('woff'),
+	     url('gothammedium.ttf') format('truetype'),
+	     url('gothammedium.svg#webfont') format('svg');
+} */
+
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +30,7 @@ header{
 
 nav{
     height: 100px;
-
+    position: fixed;
 }
 
 menu{
@@ -34,6 +43,7 @@ menu{
 
 
 main{
+    margin-top: 100px;
     display: grid;
     justify-content: flex-end;
 }
@@ -66,6 +76,7 @@ h3{
 
 .lSection{
     padding-left: 10px;
+    transition: 1s;
 }
 .projectContenedor{
     display: flex;
@@ -92,16 +103,17 @@ h3{
 
 
 .imgContainer{
-    max-width: 30vw;
-    min-width: 320px;
+    grid-template-columns: 350px;
+    grid-template-rows: 188px;
     display: grid;
     align-items: center;
     justify-items: center;
     background-color: #232630;
     overflow: hidden;
+    border-radius: 4px;
 }
 .projectCard img{
-    width: 100%;
+    width: 220%;
     grid-column: 1;
     grid-row: 1;
     z-index: 2;
