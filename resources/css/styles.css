@@ -198,3 +198,12 @@ h3{
 .skills-container i{
     font-size: 24px;
 }
+
+#bContact{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    margin-top: 0;
+    justify-content: center;
+}
